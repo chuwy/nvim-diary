@@ -4,5 +4,5 @@
 " delete this code and proceed without it.
 
 function DoItVimL()
-    echo "DoItVimL"
+    echo "Hello from VimL"
 endfunction

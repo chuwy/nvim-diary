@@ -118,8 +118,7 @@ class Main(object):
                 tmp.write(line + "\n")
         self.vim.command('view {}'.format(path))
 
-
-    @neovim.command("DiaryFindIn", nargs='*')
+    @neovim.command("DiaryFindTag", nargs='*')
     def diary_find_tag(self, args):
         pattern = '' if not args else args[0]
         home = os.getenv('HOME', '~')
